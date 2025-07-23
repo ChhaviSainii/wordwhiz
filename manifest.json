@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "WordWhiz",
+  "version": "1.0",
+  "description": "AI-powered word meaning tool for seamless reading on any website.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://api.openai.com/"],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
