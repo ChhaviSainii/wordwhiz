@@ -19,7 +19,7 @@ async function fetchMeaning(word) {
 }
 
 async function fetchAIExplanation(word) {
-    const apiKey = "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";  // ← Replace with your actual key
+    const apiKey = "your OPENAPI KEY";  // ← Replace with your actual key
 
     try {
         const response = await fetch("https://api.openai.com/v1/chat/completions", {
